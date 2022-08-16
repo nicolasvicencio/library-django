@@ -1,0 +1,38 @@
+{% extends 'layout.html' %}
+
+{% block title %}Book list {% endblock title %}
+
+{% block content %}
+
+<div class="card">
+	<div class="card-header">
+		<a name="" id="" class="btn btn-success" href="{% url 'create' %}" role="button">Add new book</a>
+	</div>
+	<div class="card-body">
+		<h4 class="card-title">Books</h4>
+		<table class="table">
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>Title</th>
+					<th>Image</th>
+					<th>Description</th>
+					<th>Actions</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>Django with python</td>
+					<td>Imagen.jpg</td>
+					<td>Project con python Lorem ipsum dolor sit amet.</td>
+					<td>Edit | Delete</td>
+				</tr>
+			</tbody>
+		</table>
+		
+	</div>
+	<div class="card-footer text-muted"></div>
+</div>
+
+{% endblock content %}
